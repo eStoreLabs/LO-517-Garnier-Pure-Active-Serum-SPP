@@ -1,0 +1,1002 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;800&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#es-garnier.es-garnier {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.2;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  color: #111;
+  background: #fff;
+  max-width: 728px;
+  /*****************************************/
+  /********* kv styles / hero styles *******/
+  /*****************************************/
+  /*****************************************/
+  /********* effectiveness styles **********/
+  /*****************************************/
+  /*********************************************/
+  /************ ingredients styles *************/
+  /*********************************************/
+  /*********************************************/
+  /********** opinion section styles ***********/
+  /*********************************************/
+  /*********************************************/
+  /************ apply section styles ***********/
+  /*********************************************/
+  /*********************************************/
+  /********** cross sell section styles ********/
+  /*********************************************/
+  /*********************************************/
+  /*********** routine section styles **********/
+  /*********************************************/
+  /*********************************************/
+  /*********** footer section styles **********/
+  /*********************************************/
+}
+#es-garnier.es-garnier * {
+  box-sizing: border-box;
+}
+#es-garnier.es-garnier h2,
+#es-garnier.es-garnier h3,
+#es-garnier.es-garnier h4,
+#es-garnier.es-garnier h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #111;
+}
+#es-garnier.es-garnier img {
+  max-width: 100%;
+  display: block;
+}
+#es-garnier.es-garnier .es-kv {
+  margin-bottom: 50px;
+}
+#es-garnier.es-garnier .es-kv__right {
+  background-image: url("../images/kv_right.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+  position: relative;
+  aspect-ratio: 491/330;
+}
+#es-garnier.es-garnier .es-kv__left {
+  background-image: url("../images/kv_left.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  aspect-ratio: 491/330;
+}
+#es-garnier.es-garnier .es-kv__logo {
+  margin-top: -30px;
+  position: absolute;
+  width: 80%;
+  max-width: 300px;
+  right: 0;
+}
+#es-garnier.es-garnier .es-kv__right--flexCtn {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 16px;
+}
+#es-garnier.es-garnier .es-kv__packshot {
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+#es-garnier.es-garnier .es-kv__packshot img {
+  height: 90%;
+  max-height: 200px;
+}
+#es-garnier.es-garnier .es-kv__text {
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-top: 60px;
+  justify-content: space-around;
+}
+#es-garnier.es-garnier .es-kv__text p {
+  margin: 0;
+}
+#es-garnier.es-garnier .es-kv__text--bracket {
+  position: relative;
+}
+#es-garnier.es-garnier .es-kv__text--bracket :after {
+  position: absolute;
+  content: "";
+  background: url("../images/brackets.png") no-repeat;
+  display: block;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+#es-garnier.es-garnier .es-kv__text--big {
+  font-size: 16px;
+  font-weight: 900;
+}
+#es-garnier.es-garnier .es-kv__text--percent {
+  font-size: 40px;
+}
+#es-garnier.es-garnier .es-kv__text--bg {
+  font-weight: 700;
+  font-size: 14px;
+  text-align: right;
+  box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.5019607843);
+  padding: 4px 8px;
+}
+@media (min-width: 500px) and (max-width: 575px) {
+  #es-garnier.es-garnier .es-kv__packshot {
+    flex-basis: 33%;
+  }
+  #es-garnier.es-garnier .es-kv__text {
+    font-size: 16px;
+  }
+  #es-garnier.es-garnier .es-kv__text--bg {
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv {
+    display: flex;
+    min-height: 250px;
+  }
+  #es-garnier.es-garnier .es-kv__left {
+    order: 1;
+    flex-basis: 50%;
+  }
+  #es-garnier.es-garnier .es-kv__right {
+    order: 2;
+    flex-basis: 50%;
+    position: relative;
+    margin-top: 40px;
+  }
+  #es-garnier.es-garnier .es-kv__right--flexCtn {
+    justify-content: start;
+    padding-left: 40px;
+  }
+  #es-garnier.es-garnier .es-kv__logo {
+    left: -10%;
+    top: -24px;
+    width: 78%;
+    max-width: 250px;
+  }
+  #es-garnier.es-garnier .es-kv__packshot {
+    position: absolute;
+    left: -40px;
+    bottom: 0;
+  }
+  #es-garnier.es-garnier .es-kv__text {
+    padding-top: unset;
+    justify-content: space-between;
+  }
+  #es-garnier.es-garnier .es-kv__text--bg {
+    text-align: left;
+    font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-kv__logo {
+    max-width: 300px;
+    top: -35px;
+  }
+  #es-garnier.es-garnier .es-kv__right {
+    margin-top: 50px;
+  }
+  #es-garnier.es-garnier .es-kv__right--flexCtn {
+    padding-left: 50px;
+  }
+  #es-garnier.es-garnier .es-kv__packshot {
+    translate: -50%;
+    left: 0;
+  }
+  #es-garnier.es-garnier .es-kv__packshot img {
+    max-height: unset;
+  }
+  #es-garnier.es-garnier .es-kv__text--bracket {
+    margin-top: 20px;
+  }
+  #es-garnier.es-garnier .es-kv__text--bg {
+    font-size: 16px;
+  }
+}
+#es-garnier.es-garnier .es-effectiveness {
+  margin-bottom: 48px;
+}
+#es-garnier.es-garnier .es-effectiveness__title {
+  text-transform: uppercase;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-effectiveness__flex-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+}
+#es-garnier.es-garnier .es-effectiveness__left {
+  position: relative;
+  z-index: 2;
+}
+#es-garnier.es-garnier .es-effectiveness__left:before {
+  content: "";
+  width: 158px;
+  height: 158px;
+  background-color: #f1f1f1;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 9%;
+  left: -40%;
+  z-index: -1;
+}
+#es-garnier.es-garnier .es-effectiveness__right {
+  position: relative;
+  z-index: 1;
+}
+#es-garnier.es-garnier .es-effectiveness__right:before {
+  content: "";
+  width: 205px;
+  height: 205px;
+  background-color: #9499a0;
+  border-radius: 50%;
+  position: absolute;
+  top: 6%;
+  right: -69%;
+  z-index: -1;
+}
+#es-garnier.es-garnier .es-effectiveness__BA-wrapper {
+  position: relative;
+  display: grid;
+  place-items: center;
+  max-width: 220px;
+}
+#es-garnier.es-garnier .es-effectiveness__img {
+  max-width: 100%;
+}
+#es-garnier.es-garnier .es-effectiveness__BA-text {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 900;
+  font-size: 18px;
+  color: #fff;
+  transform: translate(-50%, 0%);
+  bottom: 20px;
+  left: 41%;
+  width: 100%;
+  max-width: 176px;
+}
+@media screen and (min-width: 500px) {
+  #es-garnier.es-garnier .es-effectiveness__BA-text {
+    justify-content: space-around;
+    font-size: 16px;
+    bottom: 12px;
+  }
+}
+#es-garnier.es-garnier .es-effectiveness__text {
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-effectiveness__text--1 {
+  color: #0499c3;
+}
+#es-garnier.es-garnier .es-effectiveness__card-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+}
+#es-garnier.es-garnier .es-effectiveness__card-wrapper:after {
+  content: "";
+  width: 188px;
+  height: 188px;
+  background-image: url("../images/bg_round.png");
+  background-size: contain;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+#es-garnier.es-garnier .es-effectiveness__card {
+  width: 190px;
+  height: 190px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.9019607843);
+  border: none;
+  border-radius: 16px;
+  box-shadow: 4px 8px 32px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  display: grid;
+  place-items: center;
+  transition: all 0.3s ease-in-out;
+}
+#es-garnier.es-garnier .es-effectiveness__card:hover {
+  background: #fff;
+  scale: 1.05;
+}
+#es-garnier.es-garnier .es-effectiveness__card--title {
+  font-weight: 700;
+  font-size: 18px;
+}
+#es-garnier.es-garnier .es-effectiveness__card--text {
+  font-size: 13px;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-effectiveness__title {
+    text-align: left;
+    margin-left: 11%;
+  }
+  #es-garnier.es-garnier .es-effectiveness__flex-wrapper {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-left: 50px;
+  }
+  #es-garnier.es-garnier .es-effectiveness__right:before {
+    top: 8%;
+    left: -65%;
+  }
+  #es-garnier.es-garnier .es-effectiveness__text {
+    margin-right: -45px;
+    text-align: left;
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-effectiveness__title {
+    margin-bottom: -14px;
+  }
+  #es-garnier.es-garnier .es-effectiveness__flex-wrapper {
+    gap: 90px;
+    margin-left: 100px;
+    padding-top: 10px;
+  }
+}
+#es-garnier.es-garnier .es-active-ingredients__title {
+  text-transform: uppercase;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-active-ingredients__item {
+  margin-bottom: 20px;
+}
+#es-garnier.es-garnier .es-active-ingredients__item-title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 8px 0;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-active-ingredients__item-description {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: 0;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-active-ingredients__image {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+#es-garnier.es-garnier .es-active-ingredients__image--desktop {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  #es-garnier.es-garnier .es-active-ingredients__container {
+    position: relative;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item {
+    position: absolute;
+    width: 230px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item--left {
+    top: 58%;
+    left: 5%;
+    transform: translate(0, -50%);
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item--right--1 {
+    right: 5%;
+    top: 25%;
+    transform: translate(0%, -50%);
+    width: 145px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item--right--2 {
+    right: 5%;
+    top: 75%;
+    transform: translate(0%, -50%);
+    width: 145px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title {
+    margin-bottom: 35px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--black {
+    text-align: left;
+    position: relative;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--black::before {
+    position: absolute;
+    content: "";
+    background: url("../images/active-bracket-black-before.png") no-repeat;
+    display: block;
+    top: -15px;
+    left: -20px;
+    width: 30px;
+    height: 65px;
+    background-size: 74%;
+    margin-bottom: 10px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--black::after {
+    position: absolute;
+    content: "";
+    background: url("../images/active-bracket-black-after.png") no-repeat;
+    display: block;
+    top: -15px;
+    right: -45%;
+    width: 209px;
+    height: 65px;
+    background-size: 70%;
+    margin-bottom: 10px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--white {
+    text-align: center;
+    color: #fff;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--white::before {
+    position: absolute;
+    content: "";
+    background: url("../images/active-bracket-white-before.png") no-repeat;
+    display: block;
+    top: -6px;
+    right: 49%;
+    width: 208px;
+    height: 67px;
+    background-size: 74%;
+    margin-bottom: 10px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title--white::after {
+    position: absolute;
+    content: "";
+    background: url("../images/active-bracket-white-after.png") no-repeat;
+    display: block;
+    top: -6px;
+    right: -14%;
+    width: 32px;
+    height: 65px;
+    background-size: 74%;
+    margin-bottom: 10px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-description {
+    font-size: 12px;
+    margin-left: -20px;
+    text-align: left;
+    max-width: 200px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-description--right {
+    text-align: right;
+    color: #fff;
+    margin-left: auto;
+    margin-right: -12px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__image--mobile {
+    display: none;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__image--desktop {
+    display: block;
+  }
+}
+@media screen and (min-width: 850px) {
+  #es-garnier.es-garnier .es-active-ingredients__item-description {
+    font-size: 12px;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item--left {
+    top: 50%;
+    left: 7%;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item--right--1 {
+    right: 7%;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item--right--2 {
+    right: 7%;
+  }
+}
+#es-garnier.es-garnier .es-opinion {
+  margin-top: 48px;
+}
+#es-garnier.es-garnier .es-opinion__container {
+  background-image: url("../images/dermatolog-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#es-garnier.es-garnier .es-opinion__textWrapper {
+  padding: 16px;
+  max-width: 350px;
+  text-align: center;
+  text-wrap: balance;
+  margin: auto;
+}
+#es-garnier.es-garnier .es-opinion__expert {
+  font-weight: 600;
+}
+#es-garnier.es-garnier .es-opinion__text {
+  font-size: 14px;
+}
+#es-garnier.es-garnier .es-opinion__expert {
+  font-size: 14px;
+}
+#es-garnier.es-garnier .es-opinion__mobile {
+  overflow: hidden;
+}
+#es-garnier.es-garnier .es-opinion__mobile img {
+  margin-left: -100%;
+  align-content: end;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 200%;
+}
+@media (min-width: 650px) {
+  #es-garnier.es-garnier .es-opinion__container {
+    background-position: right;
+  }
+  #es-garnier.es-garnier .es-opinion__textWrapper {
+    margin-left: 2%;
+  }
+  #es-garnier.es-garnier .es-opinion__mobile {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-opinion__container {
+    margin: 32px;
+    width: 100%;
+  }
+}
+@media (min-width: 860px) {
+  #es-garnier.es-garnier .es-opinion__textWrapper {
+    margin-left: 1%;
+  }
+}
+#es-garnier.es-garnier .es-apply {
+  margin: 48px 0;
+  margin-top: 0;
+}
+#es-garnier.es-garnier .es-apply__title {
+  margin: 0;
+  padding: 16px;
+  padding-top: 50px;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-weight: 900;
+  font-size: 24px;
+  text-align: center;
+  text-transform: uppercase;
+}
+#es-garnier.es-garnier .es-apply__container {
+  padding: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+#es-garnier.es-garnier .es-apply__step {
+  width: 278px;
+}
+#es-garnier.es-garnier .es-apply__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.3s;
+}
+#es-garnier.es-garnier .es-apply__photo {
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+#es-garnier.es-garnier .es-apply__photo:hover .es-apply__img {
+  transform: scale(1.05);
+}
+#es-garnier.es-garnier .es-apply__text {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  margin: 8px 0;
+  margin-bottom: 0;
+}
+#es-garnier.es-garnier .es-apply__desc {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: smaller;
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-apply {
+    margin-bottom: 64px;
+  }
+  #es-garnier.es-garnier .es-apply__container {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: unset;
+    margin: 32px;
+  }
+  #es-garnier.es-garnier .es-apply__step {
+    width: 33%;
+  }
+}
+#es-garnier.es-garnier .es-cross {
+  position: relative;
+  z-index: 1;
+}
+#es-garnier.es-garnier .es-cross__wrapper {
+  padding: 16px;
+}
+#es-garnier.es-garnier .es-cross__title {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 800;
+  padding: 16px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-cross__container {
+  display: none;
+  flex-flow: column;
+  align-items: center;
+  gap: 16px;
+}
+#es-garnier.es-garnier .es-cross__step {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  color: #63bbbe;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  border: 2px solid #63bbbe;
+  border-radius: 8px 8px 0 0;
+  padding: 8px;
+  width: 220px;
+  font-size: 14px;
+}
+#es-garnier.es-garnier .es-cross__steps-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#es-garnier.es-garnier .es-cross__steps-container-inner {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 715px;
+  margin: 0 auto;
+}
+#es-garnier.es-garnier .es-cross__steps-item {
+  min-width: 250px;
+  padding-left: 20px;
+}
+#es-garnier.es-garnier .es-cross__steps-item--1 {
+  order: 1;
+}
+#es-garnier.es-garnier .es-cross__steps-item--2 {
+  order: 2;
+}
+#es-garnier.es-garnier .es-cross__steps-item--3 {
+  order: 3;
+}
+#es-garnier.es-garnier .es-cross__steps-item--4 {
+  order: 4;
+}
+#es-garnier.es-garnier .es-cross__steps-container {
+  background-color: #83cee3;
+}
+#es-garnier.es-garnier .es-cross__steps-item-title {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  color: #fff;
+  margin-bottom: 0;
+}
+#es-garnier.es-garnier .es-cross__steps-item-description {
+  display: block;
+  color: #000;
+  font-weight: 600;
+  font-size: 11px;
+}
+#es-garnier.es-garnier .es-cross__steps-item-step {
+  max-width: 156px;
+  margin-bottom: 0;
+  display: block;
+  padding: 10px 44px;
+  font-weight: 700;
+  font-size: 15px;
+  color: #0499c3;
+  background-color: #b6e1ef;
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-cross {
+    margin: 0 auto;
+  }
+  #es-garnier.es-garnier .es-cross__wrapper {
+    margin: 0;
+  }
+  #es-garnier.es-garnier .es-cross__title {
+    margin-bottom: 32px;
+  }
+  #es-garnier.es-garnier .es-cross__container {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+    gap: 16px;
+  }
+}
+@media (min-width: 860px) {
+  #es-garnier.es-garnier .es-cross__steps-container {
+    background: url("../images/steps-bg.png") no-repeat center;
+    background-size: cover;
+    min-height: 530px;
+  }
+  #es-garnier.es-garnier .es-cross__steps-container-inner {
+    justify-content: space-between;
+    row-gap: 10px;
+    max-width: none;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item {
+    min-width: 290px;
+    position: relative;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--1::after {
+    content: "";
+    position: absolute;
+    background: url("../images/steps-line.png") no-repeat center;
+    width: 170px;
+    height: 2px;
+    bottom: 0;
+    left: 5%;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--2 {
+    order: 3;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--2::after {
+    content: "";
+    position: absolute;
+    background: url("../images/steps-line.png") no-repeat center;
+    width: 275px;
+    height: 2px;
+    bottom: 0;
+    left: 15px;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--3 {
+    order: 4;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--3::after {
+    content: "";
+    position: absolute;
+    background: url("../images/steps-line.png") no-repeat center;
+    width: 230px;
+    height: 2px;
+    bottom: 0;
+    right: 0%;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--4 {
+    order: 2;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item--4::after {
+    content: "";
+    position: absolute;
+    background: url("../images/steps-line.png") no-repeat center;
+    width: 180px;
+    height: 2px;
+    bottom: 0;
+    right: 0%;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item-step {
+    text-align: right;
+    margin-right: 0;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item-title {
+    text-align: right;
+    margin-right: 0;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item-description--right {
+    text-align: right;
+  }
+}
+@media (min-width: 998px) {
+  #es-garnier.es-garnier .es-cross {
+    max-width: none;
+  }
+}
+#es-garnier.es-garnier .es-routine {
+  padding: 16px;
+}
+#es-garnier.es-garnier .es-routine__title {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #000;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-routine__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+#es-garnier.es-garnier .es-routine__link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  background: #c64a4a;
+  display: block;
+  width: 230px;
+  margin: 24px auto;
+  padding: 12px 60px;
+}
+#es-garnier.es-garnier .es-routine__link:hover {
+  background: #fff;
+  color: #c64a4a;
+  outline: 3px solid #c64a4a;
+}
+#es-garnier.es-garnier .es-routine__step-item-title {
+  margin: 0;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+  background-color: #fff;
+}
+#es-garnier.es-garnier .es-routine__step-compare {
+  background: linear-gradient(to right, #9499a0 0%, #9499a0 50%, #fee955 50%, #fee955 100%);
+}
+#es-garnier.es-garnier .es-routine__step-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+}
+#es-garnier.es-garnier .es-routine__step-group-item {
+  min-width: 150px;
+  max-width: 150px;
+  font-size: 11px;
+  text-align: center;
+}
+#es-garnier.es-garnier .es-routine__step-image {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 100%;
+}
+@media screen and (min-width: 700px) {
+  #es-garnier.es-garnier .es-routine__step-compare {
+    min-width: 300px;
+    padding-top: 15px;
+  }
+  #es-garnier.es-garnier .es-routine__step-group-item {
+    min-width: 145px;
+    font-size: 11px;
+    text-align: center;
+  }
+}
+@media screen and (min-width: 998px) {
+  #es-garnier.es-garnier .es-routine {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  #es-garnier.es-garnier .es-routine__steps {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    background: linear-gradient(to right, #9499a0 0%, #9499a0 50%, #fee955 50%, #fee955 100%);
+  }
+  #es-garnier.es-garnier .es-routine__link {
+    margin-left: auto;
+    margin-right: 20px;
+    margin-top: 30px;
+    width: 180px;
+  }
+}
+#es-garnier.es-garnier .es-footer {
+  padding: 0;
+  position: relative;
+  z-index: 0;
+}
+#es-garnier.es-garnier .es-footer__disclaimer {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 12px;
+}
+#es-garnier.es-garnier .es-footer__img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+}
+#es-garnier.es-garnier .es-footer__logo {
+  max-width: 150px;
+  margin: 16px auto;
+}
+#es-garnier.es-garnier .es-footer__wrapper {
+  background: linear-gradient(to right, #30663f, #167535, #30663f);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 19px 16px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-footer__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}/*# sourceMappingURL=style.css.map */
