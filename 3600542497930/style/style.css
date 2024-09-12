@@ -61,28 +61,35 @@ body {
 }
 #es-garnier.es-garnier .es-kv {
   margin-bottom: 50px;
+  position: relative;
+  overflow: hidden;
 }
 #es-garnier.es-garnier .es-kv__right {
-  background-image: url("../images/kv_right.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  margin-top: 30px;
-  position: relative;
-  aspect-ratio: 491/330;
+  min-height: 250px;
 }
-#es-garnier.es-garnier .es-kv__left {
-  background-image: url("../images/kv_left.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  aspect-ratio: 491/330;
+#es-garnier.es-garnier .es-kv__right-bg {
+  min-height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#es-garnier.es-garnier .es-kv__left-bg {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 300px;
 }
 #es-garnier.es-garnier .es-kv__logo {
-  margin-top: -30px;
   position: absolute;
-  width: 80%;
+  width: 60%;
   max-width: 300px;
   right: 0;
+  z-index: 10;
 }
 #es-garnier.es-garnier .es-kv__right--flexCtn {
   height: 100%;
@@ -96,6 +103,7 @@ body {
   height: 100%;
   display: flex;
   align-items: flex-end;
+  z-index: 1;
 }
 #es-garnier.es-garnier .es-kv__packshot img {
   height: 90%;
@@ -111,6 +119,7 @@ body {
   height: 100%;
   padding-top: 60px;
   justify-content: space-around;
+  z-index: 1;
 }
 #es-garnier.es-garnier .es-kv__text p {
   margin: 0;
@@ -118,19 +127,20 @@ body {
 #es-garnier.es-garnier .es-kv__text--bracket {
   position: relative;
 }
-#es-garnier.es-garnier .es-kv__text--bracket :after {
+#es-garnier.es-garnier .es-kv__text--bracket-img {
   position: absolute;
-  content: "";
-  background: url("../images/brackets.png") no-repeat;
-  display: block;
   top: 0;
-  right: 0;
+  left: 0;
   width: 100%;
-  height: 100%;
-  background-size: 100% 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#es-garnier.es-garnier .es-kv__text--bracket {
+  position: relative;
 }
 #es-garnier.es-garnier .es-kv__text--big {
-  font-size: 16px;
+  font-size: 13px;
   font-weight: 900;
 }
 #es-garnier.es-garnier .es-kv__text--percent {
@@ -138,7 +148,7 @@ body {
 }
 #es-garnier.es-garnier .es-kv__text--bg {
   font-weight: 700;
-  font-size: 14px;
+  font-size: 12px;
   text-align: right;
   box-shadow: inset 0px 0px 0px 1000px rgba(0, 0, 0, 0.5019607843);
   padding: 4px 8px;
@@ -157,7 +167,7 @@ body {
 @media (min-width: 576px) {
   #es-garnier.es-garnier .es-kv {
     display: flex;
-    min-height: 250px;
+    min-height: 300px;
   }
   #es-garnier.es-garnier .es-kv__left {
     order: 1;
@@ -175,7 +185,7 @@ body {
   }
   #es-garnier.es-garnier .es-kv__logo {
     left: -10%;
-    top: -24px;
+    top: -50px;
     width: 78%;
     max-width: 250px;
   }
@@ -195,8 +205,8 @@ body {
 }
 @media (min-width: 768px) {
   #es-garnier.es-garnier .es-kv__logo {
-    max-width: 300px;
-    top: -35px;
+    max-width: 69%;
+    top: -55px;
   }
   #es-garnier.es-garnier .es-kv__right {
     margin-top: 50px;
@@ -306,16 +316,17 @@ body {
   position: relative;
   z-index: 1;
 }
-#es-garnier.es-garnier .es-effectiveness__card-wrapper:after {
-  content: "";
+#es-garnier.es-garnier .es-effectiveness__card-wrapper-img {
   width: 188px;
   height: 188px;
-  background-image: url("../images/bg_round.png");
-  background-size: contain;
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
   z-index: -1;
 }
 #es-garnier.es-garnier .es-effectiveness__card {
@@ -372,6 +383,9 @@ body {
     padding-top: 10px;
   }
 }
+#es-garnier.es-garnier .es-active-ingredients__item-title-bg-before, #es-garnier.es-garnier .es-active-ingredients__item-title-bg-after, #es-garnier.es-garnier .es-active-ingredients__item-title-bg-before--white, #es-garnier.es-garnier .es-active-ingredients__item-title-bg-after--white {
+  display: none;
+}
 #es-garnier.es-garnier .es-active-ingredients__title {
   text-transform: uppercase;
   text-align: center;
@@ -424,6 +438,48 @@ body {
     left: 5%;
     transform: translate(0, -50%);
   }
+  #es-garnier.es-garnier .es-active-ingredients__item-title-bg-before {
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: -20px;
+    width: 10%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title-bg-after {
+    display: block;
+    position: absolute;
+    position: absolute;
+    top: -8px;
+    right: -48px;
+    width: 67%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title-bg-before--white {
+    display: block;
+    position: absolute;
+    top: -6px;
+    left: -120px;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #es-garnier.es-garnier .es-active-ingredients__item-title-bg-after--white {
+    display: block;
+    position: absolute;
+    position: absolute;
+    top: -8px;
+    right: 0px;
+    width: 16%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   #es-garnier.es-garnier .es-active-ingredients__item--right--1 {
     right: 5%;
     top: 25%;
@@ -443,57 +499,10 @@ body {
     text-align: left;
     position: relative;
   }
-  #es-garnier.es-garnier .es-active-ingredients__item-title--black::before {
-    position: absolute;
-    content: "";
-    background: url("../images/active-bracket-black-before.png") no-repeat;
-    display: block;
-    top: -15px;
-    left: -20px;
-    width: 30px;
-    height: 65px;
-    background-size: 74%;
-    margin-bottom: 10px;
-  }
-  #es-garnier.es-garnier .es-active-ingredients__item-title--black::after {
-    position: absolute;
-    content: "";
-    background: url("../images/active-bracket-black-after.png") no-repeat;
-    display: block;
-    top: -15px;
-    right: -45%;
-    width: 209px;
-    height: 65px;
-    background-size: 70%;
-    margin-bottom: 10px;
-  }
   #es-garnier.es-garnier .es-active-ingredients__item-title--white {
     text-align: center;
     color: #fff;
-  }
-  #es-garnier.es-garnier .es-active-ingredients__item-title--white::before {
-    position: absolute;
-    content: "";
-    background: url("../images/active-bracket-white-before.png") no-repeat;
-    display: block;
-    top: -6px;
-    right: 49%;
-    width: 208px;
-    height: 67px;
-    background-size: 74%;
-    margin-bottom: 10px;
-  }
-  #es-garnier.es-garnier .es-active-ingredients__item-title--white::after {
-    position: absolute;
-    content: "";
-    background: url("../images/active-bracket-white-after.png") no-repeat;
-    display: block;
-    top: -6px;
-    right: -14%;
-    width: 32px;
-    height: 65px;
-    background-size: 74%;
-    margin-bottom: 10px;
+    position: relative;
   }
   #es-garnier.es-garnier .es-active-ingredients__item-description {
     font-size: 12px;
@@ -531,11 +540,19 @@ body {
 }
 #es-garnier.es-garnier .es-opinion {
   margin-top: 48px;
+  position: relative;
+  overflow: hidden;
 }
-#es-garnier.es-garnier .es-opinion__container {
-  background-image: url("../images/dermatolog-bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
+#es-garnier.es-garnier .es-opinion__bg {
+  display: none;
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-height: 300px;
 }
 #es-garnier.es-garnier .es-opinion__textWrapper {
   padding: 16px;
@@ -543,15 +560,21 @@ body {
   text-align: center;
   text-wrap: balance;
   margin: auto;
+  z-index: 1;
 }
 #es-garnier.es-garnier .es-opinion__expert {
+  position: relative;
   font-weight: 600;
+  z-index: 1;
 }
 #es-garnier.es-garnier .es-opinion__text {
+  position: relative;
   font-size: 14px;
+  z-index: 1;
 }
 #es-garnier.es-garnier .es-opinion__expert {
   font-size: 14px;
+  z-index: 1;
 }
 #es-garnier.es-garnier .es-opinion__mobile {
   overflow: hidden;
@@ -573,10 +596,12 @@ body {
   #es-garnier.es-garnier .es-opinion__mobile {
     display: none;
   }
+  #es-garnier.es-garnier .es-opinion__bg {
+    display: block;
+  }
 }
 @media (min-width: 768px) {
   #es-garnier.es-garnier .es-opinion__container {
-    margin: 32px;
     width: 100%;
   }
 }
@@ -666,6 +691,9 @@ body {
   position: relative;
   z-index: 1;
 }
+#es-garnier.es-garnier .es-cross__steps-bg {
+  display: none;
+}
 #es-garnier.es-garnier .es-cross__wrapper {
   padding: 16px;
 }
@@ -721,6 +749,9 @@ body {
   min-width: 250px;
   padding-left: 20px;
 }
+#es-garnier.es-garnier .es-cross__steps-item-line {
+  display: none;
+}
 #es-garnier.es-garnier .es-cross__steps-item--1 {
   order: 1;
 }
@@ -768,6 +799,8 @@ body {
   }
   #es-garnier.es-garnier .es-cross__title {
     margin-bottom: 32px;
+    position: relative;
+    z-index: 1;
   }
   #es-garnier.es-garnier .es-cross__container {
     display: flex;
@@ -779,10 +812,20 @@ body {
   }
 }
 @media (min-width: 860px) {
-  #es-garnier.es-garnier .es-cross__steps-container {
-    background: url("../images/steps-bg.png") no-repeat center;
-    background-size: cover;
-    min-height: 530px;
+  #es-garnier.es-garnier .es-cross {
+    position: relative;
+    overflow: hidden;
+  }
+  #es-garnier.es-garnier .es-cross__steps-bg {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-height: 550px;
   }
   #es-garnier.es-garnier .es-cross__steps-container-inner {
     justify-content: space-between;
@@ -805,14 +848,29 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
+  #es-garnier.es-garnier .es-cross__steps-item-line--1 {
+    display: block;
+    width: 170px;
+    height: 2px;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item-line--2 {
+    display: block;
+    width: 275px;
+    height: 2px;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item-line--3 {
+    display: block;
+    width: 230px;
+    height: 2px;
+  }
+  #es-garnier.es-garnier .es-cross__steps-item-line--4 {
+    display: block;
+    width: 180px;
+    height: 2px;
+  }
   #es-garnier.es-garnier .es-cross__steps-item--1::after {
     content: "";
     position: absolute;
-    background: url("../images/steps-line.png") no-repeat center;
-    width: 170px;
-    height: 2px;
-    bottom: 0;
-    left: 5%;
   }
   #es-garnier.es-garnier .es-cross__steps-item--2 {
     order: 3;
@@ -820,11 +878,6 @@ body {
   #es-garnier.es-garnier .es-cross__steps-item--2::after {
     content: "";
     position: absolute;
-    background: url("../images/steps-line.png") no-repeat center;
-    width: 275px;
-    height: 2px;
-    bottom: 0;
-    left: 15px;
   }
   #es-garnier.es-garnier .es-cross__steps-item--3 {
     order: 4;
@@ -832,11 +885,6 @@ body {
   #es-garnier.es-garnier .es-cross__steps-item--3::after {
     content: "";
     position: absolute;
-    background: url("../images/steps-line.png") no-repeat center;
-    width: 230px;
-    height: 2px;
-    bottom: 0;
-    right: 0%;
   }
   #es-garnier.es-garnier .es-cross__steps-item--4 {
     order: 2;
@@ -844,11 +892,6 @@ body {
   #es-garnier.es-garnier .es-cross__steps-item--4::after {
     content: "";
     position: absolute;
-    background: url("../images/steps-line.png") no-repeat center;
-    width: 180px;
-    height: 2px;
-    bottom: 0;
-    right: 0%;
   }
   #es-garnier.es-garnier .es-cross__steps-item-step {
     text-align: right;

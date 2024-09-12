@@ -47,29 +47,39 @@ body {
 
   .es-kv {
     margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+
     &__right {
-      background-image: url('../images/kv_right.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      margin-top: 30px;
-      position: relative;
-      aspect-ratio: 491/330;
+      min-height: 250px;
+    }
+
+    &__right-bg {
+      min-height: 250px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
     }
 
     &__left {
-      background-image: url('../images/kv_left.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
-      aspect-ratio: 491/330;
+    }
+
+    &__left-bg {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      min-height: 300px;
     }
 
     &__logo {
-      margin-top: -30px;
       position: absolute;
-      width: 80%;
+      width: 60%;
       max-width: 300px;
       right: 0;
+      z-index: 10;
     }
 
     &__right--flexCtn {
@@ -85,6 +95,7 @@ body {
       height: 100%;
       display: flex;
       align-items: flex-end;
+      z-index: 1;
     }
 
     &__packshot img {
@@ -102,6 +113,7 @@ body {
       height: 100%;
       padding-top: 60px;
       justify-content: space-around;
+      z-index: 1;
     }
 
     &__text p {
@@ -112,20 +124,21 @@ body {
       position: relative;
     }
 
-    &__text--bracket :after {
+    &__text--bracket-img {
       position: absolute;
-      content: '';
-      background: url('../images/brackets.png') no-repeat;
-      display: block;
       top: 0;
-      right: 0;
+      left: 0;
       width: 100%;
-      height: 100%;
-      background-size: 100% 100%;
+      height: auto;
+      object-fit: cover;
+    }
+
+    &__text--bracket {
+      position: relative;
     }
 
     &__text--big {
-      font-size: 16px;
+      font-size: 13px;
       font-weight: 900;
     }
 
@@ -135,7 +148,7 @@ body {
 
     &__text--bg {
       font-weight: 700;
-      font-size: 14px;
+      font-size: 12px;
       text-align: right;
       box-shadow: inset 0px 0px 0px 1000px #00000080;
       padding: 4px 8px;
@@ -157,7 +170,7 @@ body {
 
     @media (min-width: 576px) {
       display: flex;
-      min-height: 250px;
+      min-height: 300px;
 
       &__left {
         order: 1;
@@ -178,7 +191,7 @@ body {
 
       &__logo {
         left: -10%;
-        top: -24px;
+        top: -50px;
         width: 78%;
         max-width: 250px;
       }
@@ -202,8 +215,8 @@ body {
 
     @media (min-width: 768px) {
       &__logo {
-        max-width: 300px;
-        top: -35px;
+        max-width: 69%;
+        top: -55px;
       }
 
       &__right {
@@ -335,16 +348,16 @@ body {
       position: relative;
       z-index: 1;
 
-      &:after {
-        content: '';
+      &-img {
         width: 188px;
         height: 188px;
-        background-image: url('../images/bg_round.png');
-        background-size: contain;
         position: absolute;
         transform: translate(-50%, -50%);
         top: 50%;
         left: 50%;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
         z-index: -1;
       }
     }
@@ -420,6 +433,13 @@ body {
   /*********************************************/
 
   .es-active-ingredients {
+    &__item-title-bg-before,
+    &__item-title-bg-after,
+    &__item-title-bg-before--white,
+    &__item-title-bg-after--white {
+      display: none;
+    }
+
     &__title {
       text-transform: uppercase;
       text-align: center;
@@ -478,6 +498,47 @@ body {
           top: 58%;
           left: 5%;
           transform: translate(0, -50%);
+          // position: relative;
+        }
+
+        &-title-bg-before {
+          display: block;
+          position: absolute;
+          top: -8px;
+          left: -20px;
+          width: 10%;
+          height: auto;
+          object-fit: cover;
+        }
+        &-title-bg-after {
+          display: block;
+          position: absolute;
+          position: absolute;
+          top: -8px;
+          right: -48px;
+          width: 67%;
+          height: auto;
+          object-fit: cover;
+        }
+
+        &-title-bg-before--white {
+          display: block;
+          position: absolute;
+          top: -6px;
+          left: -120px;
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+        &-title-bg-after--white {
+          display: block;
+          position: absolute;
+          position: absolute;
+          top: -8px;
+          right: 0px;
+          width: 16%;
+          height: auto;
+          object-fit: cover;
         }
 
         &--right--1 {
@@ -501,67 +562,12 @@ body {
         &--black {
           text-align: left;
           position: relative;
-
-          &::before {
-            position: absolute;
-            content: '';
-            background: url('../images/active-bracket-black-before.png')
-              no-repeat;
-            display: block;
-            top: -15px;
-            left: -20px;
-            width: 30px;
-            height: 65px;
-            background-size: 74%;
-            margin-bottom: 10px;
-          }
-
-          &::after {
-            position: absolute;
-            content: '';
-            background: url('../images/active-bracket-black-after.png')
-              no-repeat;
-            display: block;
-            top: -15px;
-            right: -45%;
-            width: 209px;
-            height: 65px;
-            background-size: 70%;
-            margin-bottom: 10px;
-          }
         }
 
         &--white {
           text-align: center;
           color: #fff;
-
-          &::before {
-            position: absolute;
-            content: '';
-            background: url('../images/active-bracket-white-before.png')
-              no-repeat;
-            display: block;
-            top: -6px;
-            right: 49%;
-            width: 208px;
-            height: 67px;
-            background-size: 74%;
-            margin-bottom: 10px;
-          }
-
-          &::after {
-            position: absolute;
-            content: '';
-            background: url('../images/active-bracket-white-after.png')
-              no-repeat;
-            display: block;
-            top: -6px;
-            right: -14%;
-            width: 32px;
-            height: 65px;
-            background-size: 74%;
-            margin-bottom: 10px;
-          }
+          position: relative;
         }
       }
 
@@ -618,11 +624,18 @@ body {
 
   .es-opinion {
     margin-top: 48px;
+    position: relative;
+    overflow: hidden;
 
-    &__container {
-      background-image: url('../images/dermatolog-bg.png');
-      background-repeat: no-repeat;
-      background-size: cover;
+    &__bg {
+      display: none;
+      position: absolute;
+      top: 75px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      min-height: 300px;
     }
 
     &__textWrapper {
@@ -631,18 +644,24 @@ body {
       text-align: center;
       text-wrap: balance;
       margin: auto;
+      z-index: 1;
     }
 
     &__expert {
+      position: relative;
       font-weight: 600;
+      z-index: 1;
     }
 
     &__text {
+      position: relative;
       font-size: 14px;
+      z-index: 1;
     }
 
     &__expert {
       font-size: 14px;
+      z-index: 1;
     }
 
     &__mobile {
@@ -668,11 +687,15 @@ body {
       &__mobile {
         display: none;
       }
+
+      &__bg {
+        display: block;
+      }
     }
 
     @media (min-width: 768px) {
       &__container {
-        margin: 32px;
+        // margin: 32px;
         width: 100%;
       }
     }
@@ -800,6 +823,10 @@ body {
     position: relative;
     z-index: 1;
 
+    &__steps-bg {
+      display: none;
+    }
+
     &__wrapper {
       padding: 16px;
     }
@@ -866,6 +893,10 @@ body {
       min-width: 250px;
       padding-left: 20px;
 
+      &-line {
+        display: none;
+      }
+
       &--1 {
         order: 1;
       }
@@ -922,6 +953,8 @@ body {
 
       &__title {
         margin-bottom: 32px;
+        position: relative;
+        z-index: 1;
       }
 
       &__container {
@@ -945,10 +978,21 @@ body {
     }
 
     @media (min-width: 860px) {
+      position: relative;
+      overflow: hidden;
+
+      &__steps-bg {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        min-height: 550px;
+      }
+
       &__steps-container {
-        background: url('../images/steps-bg.png') no-repeat center;
-        background-size: cover;
-        min-height: 530px;
       }
 
       &__steps-container-inner {
@@ -975,15 +1019,36 @@ body {
           align-items: flex-start;
         }
 
+        &-line {
+          &--1 {
+            display: block;
+            width: 170px;
+            height: 2px;
+          }
+
+          &--2 {
+            display: block;
+            width: 275px;
+            height: 2px;
+          }
+
+          &--3 {
+            display: block;
+            width: 230px;
+            height: 2px;
+          }
+
+          &--4 {
+            display: block;
+            width: 180px;
+            height: 2px;
+          }
+        }
+
         &--1 {
           &::after {
             content: '';
             position: absolute;
-            background: url('../images/steps-line.png') no-repeat center;
-            width: 170px;
-            height: 2px;
-            bottom: 0;
-            left: 5%;
           }
         }
 
@@ -993,11 +1058,6 @@ body {
           &::after {
             content: '';
             position: absolute;
-            background: url('../images/steps-line.png') no-repeat center;
-            width: 275px;
-            height: 2px;
-            bottom: 0;
-            left: 15px;
           }
         }
 
@@ -1007,11 +1067,6 @@ body {
           &::after {
             content: '';
             position: absolute;
-            background: url('../images/steps-line.png') no-repeat center;
-            width: 230px;
-            height: 2px;
-            bottom: 0;
-            right: 0%;
           }
         }
 
@@ -1021,11 +1076,6 @@ body {
           &::after {
             content: '';
             position: absolute;
-            background: url('../images/steps-line.png') no-repeat center;
-            width: 180px;
-            height: 2px;
-            bottom: 0;
-            right: 0%;
           }
         }
       }
